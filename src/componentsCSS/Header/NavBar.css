@@ -1,0 +1,61 @@
+/*
+  * Colores para el sitio
+  * Lavender Biscuit : #9799C2
+  * Mauvealuptuous : #C5BCD7
+  * Nice : #F4ECDC
+  * Sunlit counter Rose : #F1D2B8
+  * Lung Capacity : #E5AFA0
+*/
+
+#navBar{
+    background-color: #9799C2;
+    padding: 8px;
+}
+
+#logoNav{
+    text-align: left !important;
+    margin-right: 25%;
+    text-decoration: none;
+}
+
+#navBar a{
+    color: #F4ECDC;
+    font-size: 25px;
+}
+
+#navBar li{
+    padding-top: 12px;
+}
+
+#btonRegistro{
+    margin-left: 10%;
+}
+
+#logoCompras {
+    margin-top: 15px;
+    margin-left: 15px;
+}
+
+#liEspaña{
+    text-decoration: none;
+}
+
+#liEuropa{
+    text-decoration: none;
+}
+
+#liAsia{
+    text-decoration: none;
+}
+
+#liMarruecos{
+    text-decoration: none;
+}
+
+#btonRegistro{
+    text-decoration: none;
+}
+
+#btonLogin{
+    text-decoration: none;
+}

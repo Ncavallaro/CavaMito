@@ -1,0 +1,27 @@
+.item{
+    margin: 1%;
+    padding: 20px;
+    display: inline-grid;
+    width: 30%;
+    text-align: center !important;
+    background: #f5f5f5;
+    border-radius: 20px;
+}
+
+.item h3{
+    font-size: 22px;
+}
+
+.item figure img{
+    width: 500px;
+    border-radius: 8px;
+}
+
+.btnDetalle {
+    width: 30%;
+    background: #C5BCD7;
+    border-color: #9799C2;
+    border-radius: 5px;
+    padding-bottom: 4px;
+    padding-top: 4px;
+}
