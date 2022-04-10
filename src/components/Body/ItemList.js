@@ -9,14 +9,14 @@ const ItemList = (props) =>{
     return(
         <div className='center'>
             {
-                props.trips.length > 0 ? (
-                    props.trips.map((trip) => (
+                props.items.length > 0 ? (
+                    props.items.map((item) => (
                     <Item 
-                        key={trip.id} 
-                        title={trip.name}
-                        img={trip.img} 
-                        price={trip.price}
-                        id={trip.id} 
+                        key={item.id} 
+                        title={item.name}
+                        img={item.img} 
+                        price={item.price}
+                        id={item.id} 
                     />
                 ))
             ):(

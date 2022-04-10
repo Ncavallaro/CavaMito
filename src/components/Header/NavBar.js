@@ -1,7 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../../componentsCSS/Header/NavBar.css';
 import logoPrincipal from '../../image/iconoTienda.png';
-import compras from '../../image/compras.png';
 import CartWidget from '../Header/CartWidget';
 import { Link } from 'react-router-dom';
 
@@ -13,41 +12,37 @@ const NavBar = () => {
             <ul className="nav justify-content-center"  id='navBar'>
                 <Link to='/' id='logoNav' >
                     <a className="navbar-brand" href="#" >
-                        <img src={logoPrincipal} alt="" width="80" height="80" /> CAVA
+                        <img src={logoPrincipal} alt="" width="80" height="80" /> Cavamito
                     </a>
                 </Link>
                 <Link to='/category/ESPAÑA' id='liEspaña'>
                     <li className="nav-item">
-                        <a className="nav-link active" aria-current="page" href="#">España</a>
+                        <a className="nav-link active" aria-current="page" href="#">Hogar y Muebles</a>
                     </li>
                 </Link>
                 <Link to='/category/EUROPA' id='liEuropa'>
                     <li className="nav-item">
-                        <a className="nav-link" href="#">Europa</a>
+                        <a className="nav-link" href="#">Electrodomésticos</a>
                     </li>
                 </Link>
                 <Link to='/category/ASIA' id='liAsia'>
                     <li className="nav-item">
-                        <a className="nav-link" href="#">Asia</a>
+                        <a className="nav-link" href="#">Moda</a>
                     </li>
                 </Link>
                 <Link to='/category/MARRUECOS' id='liMarruecos'>
                     <li className="nav-item">
-                        <a className="nav-link" href="#" >Marruecos</a>
+                        <a className="nav-link" href="#" >Bebés</a>
                     </li>
                 </Link>
-                <Link to='/' id="btonRegistro">
-                    <li className="nav-item" >
-                        <a className="nav-link" href="#" >Crear tu cuenta</a>
+                <Link to='/category/OTROS' id='liOtros'>
+                    <li className="nav-item">
+                        <a className="nav-link" href="#" >Otros</a>
                     </li>
                 </Link>
-                <Link to='/' id="btonLogin" >
-                    <li className="nav-item" id="btonLogin">
-                        <a className="nav-link" href="#" >Ingresar</a>
-                    </li>
-                </Link> 
+                 
                 <Link to='/cart' id="btonLogin" >                
-                    <CartWidget imagen={compras} cant={5} />
+                    <CartWidget />
                 </Link>
             </ul>
         </div>
