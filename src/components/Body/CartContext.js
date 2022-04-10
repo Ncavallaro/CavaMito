@@ -7,11 +7,11 @@ const CartContextProvider = ({children}) =>{
     const [cartList, setCartList] = useState([])
 
     const addToCart = (item, cant) => {
-        const itemIs = cartList.find((trip ) => trip.id === item.id);
+        const itemIs = cartList.find(( product ) =>  product.id === item.id);
         if (itemIs){
             setCartList(
-                cartList.map((trip ) => {
-                    return {...trip, cant: trip.cant + cant };
+                cartList.map(( product ) => {
+                    return {... product, cant:  product.cant + cant };
                 })
                 );
         } else {

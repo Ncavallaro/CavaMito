@@ -6,21 +6,21 @@ import db from '../firebaseConfig';
 
 const ItemListContainer = () => {
 
-  const [trips , setTrips ] = useState("");
+  const [items , setItems ] = useState("");
   const { idCategory } = useParams();
 
   useEffect (() => {
     const firestoreFetch = async () => {
-      const querySnapshot = await getDocs (collection(db, "dataTrips"));
+      const querySnapshot = await getDocs (collection(db, "products"));
       return querySnapshot.docs.map (document => ({
         id: document.id,
         ...document.data()
       }))
     }
     firestoreFetch()
-      .then(trips => setTrips(idCategory !== undefined ? trips.filter(trip => trip.category === idCategory):trips))
+      .then(items => setItems(idCategory !== undefined ? items.filter(item => item.category === idCategory):items))
       .catch(error => console.log(error));
-  },[trips])
+  },[items])
 
     //para actualizar el componenete
     useEffect(() => {
@@ -28,7 +28,7 @@ const ItemListContainer = () => {
   
     return (
       <>       
-        <ItemList trips={trips}/>
+        <ItemList items={items}/>
       </>
     );
 }
